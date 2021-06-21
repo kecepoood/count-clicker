@@ -66,6 +66,11 @@ body {
     z-index: 10000;
     position: absolute;
     top: 19%;
+    
+    /* membuat text tidak bisa di block */
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 button {
