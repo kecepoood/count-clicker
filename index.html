@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="countBx">
+                <h2><span id="num">0</span></h2>
+            </div>
+            <div class="btn">
+                <button id="counting" class="click">Click This!</button>
+                <button onclick="reset()" class="reset">Reset</button>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        var num = 0;
+        $button = document.getElementById("counting");
+        $span = document.querySelector('span');
+
+        function count() {
+            num = num+1;
+            $span.innerHTML = num;
+        }
+
+        $button.addEventListener('click', count);
+
+        function reset() {
+            num = 0;
+            document.getElementById("num").innerHTML = num;
+        }
+    </script>
+</body>
+</html>
