@@ -23,15 +23,15 @@
     
     <script>
         var num = 0;
-        $button = document.getElementById("counting");
-        $span = document.querySelector('span');
+        const button = document.getElementById("counting");
+        const span = document.querySelector('span');
 
         function count() {
             num = num+1;
-            $span.innerHTML = num;
+            span.innerHTML = num;
         }
 
-        $button.addEventListener('click', count);
+        button.addEventListener('click', count);
 
         function reset() {
             num = 0;
